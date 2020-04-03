@@ -16,7 +16,6 @@ client.on("message", message => {
   if(command === "help") {
     message.reply(`
   **help** <-- Príkazy \n
-  **prefix** [option] <-- Nastavenie prefixu \n
   **clear** [počet] <-- Odstráni počet správ \n
   **timer** [čas v sekundách] <-- Časovač \n
   `);
