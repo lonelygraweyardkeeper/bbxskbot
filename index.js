@@ -12,15 +12,6 @@ client.on("message", message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  if(command === "prefix") {
-    var setPrefix = args[0];
-    if(setPrefix == null) {
-      message.reply(`Prefix je **${prefix}** .`);
-    }else{
-      prefix = setPrefix;
-      message.reply(`Prefix bol nastavený na **${prefix}**.`)
-    }
-  }
 
   if(command === "help") {
     message.reply(`
